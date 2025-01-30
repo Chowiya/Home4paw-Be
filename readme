@@ -1,0 +1,27 @@
+# Home4Paw Backend
+
+The backend for PawFinds is built with Node.js, Express.js, and MongoDB, providing RESTful APIs for managing pet adoptions, user authentication, adoption applications, and communication between adopters and shelters.
+
+---
+
+## Features
+- **User Authentication**: Secure login and registration with JWT-based authentication.
+- **Pet Management**: APIs for adding, updating, deleting, and fetching pets.
+- **Adoption Applications**: Manage adoption forms and track application status.
+- **Messaging System**: Communication between adopters and shelters.
+- **Appointment Scheduling**: Schedule visits or meetings with shelters.
+- **Email Notifications**: Automated email notifications for key events (e.g., approvals, deletions).
+- **Admin Dashboard**: Tools for managing adoption requests and pet listings.
+
+---
+
+## Tech Stack
+- **Node.js**: Runtime for building the backend.
+- **Express.js**: Framework for API development.
+- **MongoDB**: Database for storing application data.
+- **Mongoose**: ODM for MongoDB.
+- **Nodemailer**: Email service for notifications.
+- **JWT**: Secure user authentication.
+- **dotenv**: For managing environment variables.
+
+---
