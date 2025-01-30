@@ -14,7 +14,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin:'https://home4paws.netlify.app',
+        origin:'https://home4paws.netlify.app/auth',
         credentials: true
     }
 ));
