@@ -23,6 +23,7 @@ const userRegistration = async (req, res) => {
 
 const petTypes = async (req, res) => {
     try {
+        console.log("Fetching pet types.....")
         const pets = await Pet.aggregate([
             {
                 $group: {
@@ -31,7 +32,7 @@ const petTypes = async (req, res) => {
                 }
             }
         ]);
-
+        console.log(pets)
         res.json(pets);
     } catch (err) {
         res.status(500).json({ message: err.message });
