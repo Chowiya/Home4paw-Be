@@ -27,8 +27,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', OtpRouter)
 app.use(userRouter)
-app.use('/dashboard', DashboardRouter)
+
+
 app.use(requireAuth)
+
+app.use('/dashboard', DashboardRouter)
+
 app.use(petRouter)
 app.use('/form', AdoptFormRoute)
 
