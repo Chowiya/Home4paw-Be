@@ -2,6 +2,13 @@ const jwt = require('jsonwebtoken')
 const User = require('../Model/UserModel')
 
 const requireAuth = async (req, res, next) => {
+
+    // authendication for image request
+
+    if (req.url.startsWith('/images')) {
+        return next();
+    }
+
     const { authorization } = req.headers
     if (!authorization){
         return res.status(401).json({error: 'Authorization token missing'})
