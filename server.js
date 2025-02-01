@@ -33,8 +33,9 @@ app.use(requireAuth)
 
 app.use('/dashboard', DashboardRouter)
 
-app.use(petRouter)
+
 app.use('/form', AdoptFormRoute)
+app.use(petRouter)
 
 mongoose.connect(process.env.mongooseURL)
     .then(() => {
